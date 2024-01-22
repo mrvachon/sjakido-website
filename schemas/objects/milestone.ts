@@ -53,8 +53,8 @@ export default defineType({
       return {
         media: image,
         subtitle: [
-          duration?.start && new Date(duration.start).getFullYear(),
-          duration?.end && new Date(duration.end).getFullYear(),
+          duration?.start && new Date(duration.start).toString(),
+          duration?.end && new Date(duration.end).toString(),
         ]
           .filter(Boolean)
           .join(' - '),
